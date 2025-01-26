@@ -3,5 +3,5 @@ from .forms import PaymentForm
 
 # Create your views here.
 def payment_view(request):
-    form=paymentForm()
+    form=PaymentForm()
     return render(request,"payment_form.html",{"form":form})
